@@ -9,6 +9,7 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.springframework.cloud:spring-cloud-starter-contract-stub-runner:3.0.4'
 }
 
 jar {
