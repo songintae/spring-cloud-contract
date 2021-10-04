@@ -14,8 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureStubRunner(
-        stubsMode = StubRunnerProperties.StubsMode.REMOTE,
-        repositoryRoot = "stubs://file:///Users/songintae/Documents/private/spring-cloud-contract/producer/build/stubs/",
+        stubsMode = StubRunnerProperties.StubsMode.LOCAL,
         ids = {"com.example:producer:+:stubs:8085"}
 )
 class FraudRestTest {

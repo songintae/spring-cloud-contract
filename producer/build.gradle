@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'spring-cloud-contract'
+    id 'maven-publish'
 }
 
 version '0.0.1-SNAPSHOT'
@@ -20,6 +21,25 @@ jar {
 }
 
 contracts {
-    basePackageForTests = 'com.example.producer'
+    baseClassForTests = 'com.example.producer.BaseTestClass'
     testFramework = 'JUNIT5'
+}
+
+ext {
+    contractsDir = file("mappings")
+    stubsOutputDirRoot = file("${project.buildDir}/stubs/")
+}
+
+// Automatically added by plugin:
+// copyContracts - copies contracts to the output folder from which JAR will be created
+// verifierStubsJar - JAR with a provided stub suffix
+// the presented publication is also added by the plugin but you can modify it as you wish
+
+publishing {
+    publications {
+        stubs(MavenPublication) {
+            artifactId "${project.name}"
+            artifact verifierStubsJar
+        }
+    }
 }
