@@ -1,9 +1,9 @@
 package com.example.producer;
 
-import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.jupiter.api.BeforeEach;
 
-class FraudControllerBaseTest {
+class BaseTestClass {
 
     @BeforeEach
     void setUp() {
