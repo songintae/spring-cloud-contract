@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompileOnly 'org.springframework.cloud:spring-cloud-starter-contract-verifier'
+    testCompileOnly "com.jayway.restassured:rest-assured:2.5.0"
+    testCompileOnly "com.jayway.restassured:spring-mock-mvc:2.5.0"
+}
+
+jar {
+    enabled = false
+}
+

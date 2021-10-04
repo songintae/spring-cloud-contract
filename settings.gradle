@@ -1,0 +1,4 @@
+rootProject.name = 'sping-cloud-contract'
+include 'producer'
+include 'consumer'
+
