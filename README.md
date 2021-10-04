@@ -7,7 +7,7 @@
    2. Consumer : 특정 API를 소비한느 Consumer. 프로듀서가 제공하는 stub을 기반으로 테스트 작성
 
 ## Spring Cloud Contract workflow
-![img_1.png](img_1.png)
+![img_1.png](img_1.png)\
 출처 : https://docs.spring.io/spring-cloud-contract/docs/current/reference/html/getting-started.html#getting-started-three-second-tour
 
 
