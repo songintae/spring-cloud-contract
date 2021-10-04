@@ -30,11 +30,13 @@ ext {
     stubsOutputDirRoot = file("${project.buildDir}/stubs/")
 }
 
-// Automatically added by plugin:
-// copyContracts - copies contracts to the output folder from which JAR will be created
-// verifierStubsJar - JAR with a provided stub suffix
-// the presented publication is also added by the plugin but you can modify it as you wish
-
+/**
+ * Jar기반으로 Stub Publish
+ * https://cloud.spring.io/spring-cloud-contract/reference/html/project-features.html#features-stub-runner-publishing-stubs-as-jars
+ * https://docs.gradle.org/current/userguide/publishing_maven.html
+ * 실행 명령어 : ./gradlew publishToMavenLocal
+ * local maven repository : cd ~/.m2
+ */
 publishing {
     publications {
         stubs(MavenPublication) {
