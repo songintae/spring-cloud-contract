@@ -38,7 +38,7 @@ class FraudRestTest {
         assertThat(response.getBody()).isEqualTo("{\"fraudCheckStatus\":\"FRAUD\",\"reason\":\"Amount too high\"}");
     }
 
-    @Test()
+    @Test
     void validate_undefinition_request() {
         String contents = "{\n" +
                 "   \"clientId\":\"9183197499\",\n" +

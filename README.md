@@ -4,7 +4,7 @@
 1. Build Tool : Gradle
 2. 모듈
    1. Producer : 특정 API를 제공하는 Producer. 컨슈머에게 계약에 따라 stub을 제공한다.
-   2. Consumer : 특정 API를 소비한느 Consumer. 프로듀서가 제공하는 stub을 기반으로 테스트 작성
+   2. Consumer : 특정 API를 소비한는 Consumer. 프로듀서가 제공하는 stub을 기반으로 테스트 작성
 
 ## Spring Cloud Contract workflow
 ![img_1.png](img_1.png)\
